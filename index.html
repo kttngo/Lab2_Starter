@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Meeting minutes" />
+    <title>Meeting Minutes</title>
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <h1>Meeting Minutes</h1>
+      <p><strong>Topic:</strong> Documentation</p>
+      <p><strong>Date:</strong> April 11, 2026</p>
+
+      <nav>
+        <hr />
+        <h2>Table of Contents</h2>
+        <ul>
+          <li><a href="#attendance">Attendance</a></li>
+          <li><a href="#agenda">Agenda</a></li>
+          <li><a href="#unfinished">Unfinished Business</a></li>
+          <li><a href="#new">New Business</a></li>
+          <li><a href="#misc">Miscellaneous</a></li>
+          <li><a href="#media">Media</a></li>
+          <li><a href="#video">Video</a></li>
+          <li><a href="#poll">Poll</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <hr />
+        <h2>Overview</h2>
+        <div>
+          <p>
+            This page keeps track of a <em>SWE</em> team meeting.
+          </p>
+          <p>
+            <i><span>Note taker:</span></i> <b>John Smith</b>
+            </br>
+            <li>For those who cannot attend meetings and want to be updated.</li>
+          </p>
+        </div>
+        <hr />
+      </section>
+
+      <section id="attendance">
+        <h2>Attendance</h2>
+        <h3>Present</h3>
+        <ul>
+          <li>Kimberly</li>
+          <li>Ethan</li>
+          <li>Andy</li>
+        </ul>
+        <details>
+          <summary><strong>Extra note</strong></summary>
+          <p>Ellie has missed more than 5 days.</p>
+        </details>
+      </section>
+
+      <section id="agenda">
+        <hr />
+        <h2>Agenda</h2>
+        <ol>
+          <li>Check progress of project</li>
+          <li>Review tasks</li>
+        </ol>
+      </section>
+
+      <section id="unfinished">
+        <hr />
+        <h2>Unfinished Business</h2>
+        <p>Update documentation and reach out to the professor about the project.</p>
+      </section>
+
+      <section id="new">
+        <hr />
+        <h2>New Business</h2>
+        <p>Make code cleaner.</p>
+      </section>
+
+      <section id="misc">
+        <hr />
+        <h2>Comments, Questions, and Concerns</h2>
+        <p>
+          One member asked if future meetings will be this short. Another asked if they could fix the team logo.
+        </p>
+      </section>
+
+      <section id="media">
+        <hr />
+        <h2>Videos</h2>
+
+        <h3>Video Recording</h3>
+        <video controls>
+          <source src="lab2-video.mp4" type="video/mp4" />
+        </video>
+
+        <h3>Audio Recording</h3>
+        <audio controls>
+          <source src="lab2-audio.mp3" type="audio/mpeg" />
+        </audio>
+
+        <h3>Diagram</h3>
+        <img
+          src="venn.jpg"
+          alt="Venn diagram used in the meeting"
+        />
+      </section>
+
+      <section id="poll">
+        <hr />
+        <h2>Poll</h2>
+        <form>
+          <fieldset>
+            <legend>Question!</legend>
+            <p>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" list="names" />
+            </p>
+
+            <datalist id="names">
+              <option value="Kimberly"></option>
+              <option value="Ethan"></option>
+              <option value="Andy"></option>
+            </datalist>
+
+            <p>
+              <label for="date">Date:</label>
+              <input type="date" id="date" name="date" />
+            </p>
+
+            <p>Rate today's meeting:</p>
+            <input type="checkbox" id="amazing" name="rate" value="amazing" />
+            <label for="amazing">Amazing</label>
+            <input type="checkbox" id="horrible" name="rate" value="horrible" />
+            <label for="horrible">Horrible</label>
+
+            <p>
+              <label for="topic">Select a topic for next time:</label>
+              <select id="topic" name="topic">
+                <option value="debugging">Debugging</option>
+                <option value="design">Design</option>
+                <option value="communication">Communication</option>
+              </select>
+            </p>
+
+            <p>Question: Yes or No</p>
+            <input type="radio" id="yes" name="attend" value="yes" />
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="attend" value="no" />
+            <label for="no">No</label>
+            <p>
+              <label for="comments">Comments:</label><br />
+              <textarea id="comments" name="comments" rows="4" cols="20"></textarea>
+            </p>
+            <button type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      </br>
+      <hr />
+      <p></p>
+        HTML meeting minutes page for Lab 2.
+      </p>
+    </footer>
+
+  </body>
+</html>
